@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.tests.SelectTestScreen"
+    android:background="@color/light_green">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/h1text_sts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_one_of_the_test"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/tests_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/its_just_a_image"
+            android:src="@drawable/back_button_resize"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/h1text_sts"
+            app:layout_constraintBottom_toBottomOf="@id/h1text_sts"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/attention_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/test_of_attention"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/memory_test_sts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h1text_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/memory_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/memory_test"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/h1text_sts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/attention_test_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logic_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/logic_test"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/reaction_test_sts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/attention_test_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reaction_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/reaction_test"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/memory_test_sts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/logic_test_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/math_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/math_test"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/speech_test_sts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logic_test_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/speech_test_sts"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            style="@style/BasicButtonStyle"
+            android:text="@string/speech_test"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/reaction_test_sts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/math_test_sts"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
